@@ -1,0 +1,184 @@
+/* .logout  {
+    margin-left: 500px;
+    margin-top: 300px;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .logout:hover {
+    background-color: #006616;
+  }
+*/
+  .card{
+    padding: 40px 20px  ;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.67);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.67);
+    border-radius: 20px;
+    margin-left: 35%;
+    max-width:  350px;
+    margin-top: 5%;
+  }
+.card1{
+  padding: 40px 20px  ;
+  border: none;
+  /* background: linear-gradient(195deg, #42424a, #191919); */
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.67);
+-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.67);
+-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.67);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:  500px;
+  /* background-color: rgb(162, 206, 162); */
+  margin-top: 1.5%;
+  /* background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+
+.cancel{
+  border: 1px solid red;
+  color: red;
+}
+.logout{
+  border: 1px solid green;
+  color: green;
+}
+.text-center2{
+  text-align: center;
+}
+.headingLOG{
+  color: rgb(33,30,30);
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.desc2{
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 3%
+}
+.img-man{
+  max-width: 250px;
+  margin-bottom: 0%;
+}
+.btn{
+  font-weight: bold;
+  border-radius: 20px;
+ background-color: white;
+  padding: 5px 20px;
+  margin: 10px;
+}
+.btn:hover{
+  cursor: pointer;
+  color: white;
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+.cancel:hover{
+  background-color: red;
+}
+.logout:hover{
+  background-color: green;
+}
+
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.login-message {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.login-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.login-option {
+  margin-right: 1rem;
+}
+
+.login-link {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.teacher-login-link {
+  background-color: #1abc9c;
+}
+
+.student-login-link {
+  background-color: #3498db;
+}
+
+.login-link:hover {
+  background-color: #555;
+}
+
+
+.card2 {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.card2-header {
+  background-color: #f2f2f2;
+  border-radius: 8px 8px 0px 0px;
+  padding: 16px;
+}
+
+.card2-header h2 {
+  margin: 0;
+}
+
+.card2-body {
+  padding: 16px;
+}
+
+.card2-footer {
+  background-color: #f2f2f2;
+  border-radius: 0px 0px 8px 8px;
+  padding: 16px;
+}
+
+.card2-footer a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card2-footer a:hover {
+  color: #555555;
+}

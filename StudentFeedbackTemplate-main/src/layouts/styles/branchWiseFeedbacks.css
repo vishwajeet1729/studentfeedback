@@ -1,0 +1,94 @@
+.container12 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    margin-left: 300px;
+    
+  }
+  
+  .cardContainer12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .card12 {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card12:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  
+  .cardHeader12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .cardHeading12 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .closeButton12 {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .closeButton12:hover {
+    color: #333;
+  }
+  
+  .cardText12 {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .viewButton12 {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewButton12:hover {
+    background-color: #666;
+  }
+  
+  .heading12 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .container12 {
+      padding: 50px 10px;
+    }
+  
+    .card12 {
+      margin: 20px 10px;
+    }
+  }
+  
