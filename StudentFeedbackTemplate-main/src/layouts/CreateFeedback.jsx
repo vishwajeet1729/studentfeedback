@@ -55,7 +55,7 @@ const CreateFeedback = () => {
     const [allBranches,setAllBranches]=useState([])
     
     var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
-    var url='http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/getAllClasses'
+    var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/getAllClasses'
     useEffect(()=>{
          
         const getBranches=async()=>{
@@ -134,7 +134,7 @@ const CreateFeedback = () => {
 
             const subForm=async()=>{
               
-                var url='http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback';
+                var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback';
 
                 const res=await fetch(`${baseUrl}/feedback`,{
                     method:'POST',

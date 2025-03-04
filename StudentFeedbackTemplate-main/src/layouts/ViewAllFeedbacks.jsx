@@ -12,7 +12,7 @@ const ViewAllFeedbacks=({curr})=>{
     const [val,setVal]=useState(-1)
     const {user,dispatchs}=useAuthContext();
     
-    var url=`http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback/allFeedbacks/${curr}`
+    var url=`http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/allFeedbacks/${curr}`
     var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
       useEffect(()=>{
         

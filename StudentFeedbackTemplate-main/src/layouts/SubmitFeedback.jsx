@@ -53,7 +53,7 @@ useEffect(()=>{
 
         const sendSubmitFeedback = async () => {
 
-               var url='http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback/submitFeedback'
+               var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/submitFeedback'
 
             //  const res = await fetch(`${baseUrl}/feedback/submitFeedback`, {
             //     method: 'POST',

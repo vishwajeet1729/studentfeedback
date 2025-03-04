@@ -57,7 +57,7 @@ function Dashboard() {
     }
     
     const sendReq=async()=>{
-              var url='http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/createClass'
+              var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/createClass'
     //   const res=await fetch(`${baseUrl}/createClass`,{
     //     method:'POST',
     //     body: JSON.stringify(data),
@@ -86,7 +86,7 @@ function Dashboard() {
       
       const getData=async()=>{
          
-        var url='http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/dataForDashboard'
+        var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/dataForDashboard'
         // const res=await fetch(`${baseUrl}/dataForDashboard`)
         const res=await fetch(url)
         const data=await res.json();

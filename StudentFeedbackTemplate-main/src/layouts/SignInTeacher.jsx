@@ -52,7 +52,7 @@ export default function SignInTeacher() {
      }
 
      var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
-     var url='http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/teacher/login'
+     var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/teacher/login'
      var newUrl=`${baseUrl}/teacher/login`
 
      console.log(newUrl);

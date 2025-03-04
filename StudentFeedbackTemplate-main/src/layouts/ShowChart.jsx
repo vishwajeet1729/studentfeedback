@@ -92,7 +92,7 @@ const ShowChart=({handleShowChart,ind,feedbacks,dataForChart,dataForTable,margs1
 
       // console.log(feedbacks[ind]._id)
       var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app';
-      var url=`http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback/active/${feedbacks[ind]._id}`
+      var url=`http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/active/${feedbacks[ind]._id}`
       
       const sendReq=async()=>{
            const res=await fetch(`${baseUrl}/feedback/active/${feedbacks[ind]._id}`)
