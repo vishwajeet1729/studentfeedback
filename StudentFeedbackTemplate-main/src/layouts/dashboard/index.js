@@ -57,7 +57,7 @@ function Dashboard() {
     }
     
     const sendReq=async()=>{
-              var url='http://studentfeedback-five.vercel.app/createClass'
+              var url='http://localhost:3005/createClass'
     //   const res=await fetch(`${baseUrl}/createClass`,{
     //     method:'POST',
     //     body: JSON.stringify(data),
@@ -86,7 +86,7 @@ function Dashboard() {
       
       const getData=async()=>{
          
-        var url='http://studentfeedback-five.vercel.app/dataForDashboard'
+        var url='http://localhost:3005/dataForDashboard'
         // const res=await fetch(`${baseUrl}/dataForDashboard`)
         const res=await fetch(url)
         const data=await res.json();

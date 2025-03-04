@@ -14,7 +14,7 @@ const BranchWiseFeedbacks=()=> {
     useEffect(()=>{
          
       const getBranches=async()=>{
-           const branches=await fetch('http://studentfeedback-five.vercel.app/getAllClasses'); 
+           const branches=await fetch('http://localhost:3005/getAllClasses'); 
           // const branches=await fetch(`${baseUrl}/getAllClasses`); 
           const data=await branches.json();
           
