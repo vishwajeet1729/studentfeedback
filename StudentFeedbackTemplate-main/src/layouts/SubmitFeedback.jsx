@@ -53,7 +53,7 @@ useEffect(()=>{
 
         const sendSubmitFeedback = async () => {
 
-               var url='http://localhost:3005/feedback/submitFeedback'
+               var url='http://studentfeedback-five.vercel.app/feedback/submitFeedback'
 
             //  const res = await fetch(`${baseUrl}/feedback/submitFeedback`, {
             //     method: 'POST',

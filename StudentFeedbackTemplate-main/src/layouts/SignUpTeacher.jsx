@@ -51,7 +51,7 @@ export default function SignUpTeacher() {
     };
 
     var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
-    var url='http://localhost:3005/teacher/register'
+    var url='http://studentfeedback-five.vercel.app/teacher/register'
 
     // const resp=await fetch(`${baseUrl}/teacher/register`,{
     //     method:'POST',

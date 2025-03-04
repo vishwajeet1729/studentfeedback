@@ -51,7 +51,7 @@ export default function SignUpMUI() {
       password: data.get('password'),
     };
 
-    var url='http://localhost:3005/student/register'
+    var url='http://studentfeedback-five.vercel.app/student/register'
     var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
 
     // const resp=await fetch(`${baseUrl}/student/register`,{
