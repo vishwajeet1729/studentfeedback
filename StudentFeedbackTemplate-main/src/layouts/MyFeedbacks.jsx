@@ -26,7 +26,7 @@ const MyFeedbacks=({teacherId,flag})=>{
      }
 
      var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
-  const fetchUrl=len>0?`http://localhost:3005/feedback/myFeedbacks/${teacherId}`:`http://localhost:3005/feedback/myFeedbacks/${user.teacher._id}`
+  const fetchUrl=len>0?`http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback/myFeedbacks/${teacherId}`:`http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback/myFeedbacks/${user.teacher._id}`
      
     // var url1=`https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app/feedback/myFeedbacks/${teacherId}`
     // var url2=`https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app/feedback/myFeedbacks/${user.teacher._id}`
@@ -37,7 +37,7 @@ const MyFeedbacks=({teacherId,flag})=>{
     
       useEffect(()=>{
 
-       // const fet=`http://localhost:3005/feedback/myFeedbacks/${user.teacher._id}`
+       // const fet=`http://studentfeedback-b9mjpwu54-vishwajeet1729s-projects.vercel.app/feedback/myFeedbacks/${user.teacher._id}`
        // console.log(fet)
         const fet=fetchUrl
 
