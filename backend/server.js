@@ -19,7 +19,7 @@ const app = express();
 const corsOptions = {
   // origin: "https://gen-z-games.vercel.app",
   // origin: "https://gen-zgames.vercel.app",
-  origin: "https://localhost:3000",
+  origin: "https://studentfeedback-rosy.vercel.app",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
