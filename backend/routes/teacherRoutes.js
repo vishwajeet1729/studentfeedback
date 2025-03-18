@@ -6,9 +6,9 @@ const router = express.Router();
 router.post("/register", async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    if (!email.endsWith("@iiitn.ac.in")) {
-      throw Error("Please register with institute mail id");
-    }
+    // if (!email.endsWith("@iiitn.ac.in")) {
+    //   throw Error("Please register with institute mail id");
+    // }
     const teacher = new Teacher({
       name,
       email,
