@@ -86,7 +86,7 @@ function Dashboard() {
       
       const getData=async()=>{
          
-        var url='https://studentfeedback-backend-mu.vercel.app//dataForDashboard'
+        var url='https://studentfeedback-backend-mu.vercel.app/dataForDashboard'
         // const res=await fetch(`${baseUrl}/dataForDashboard`)
         const res=await fetch(url)
         const data=await res.json();
