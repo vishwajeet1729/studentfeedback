@@ -16,7 +16,14 @@ const feedbackRoutes = require("./routes/feedbackRoutes");
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+  // origin: "https://gen-z-games.vercel.app",
+  // origin: "https://gen-zgames.vercel.app",
+  origin: "https://localhost:3000",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 mongoose.set("strictQuery", false);
