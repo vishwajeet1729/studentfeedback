@@ -104,7 +104,7 @@ const ViewAllFeedbacks=({curr})=>{
                 return(
                    
                     <div key={i} className="feedback">
-                        <li className='SRNO'>{"cse"}</li>
+                        <li className='SRNO'>cse</li>
                         <li className='subject'>
                         {feedback.subject}
                         </li>
