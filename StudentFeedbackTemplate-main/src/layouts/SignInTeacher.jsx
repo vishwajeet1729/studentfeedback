@@ -15,7 +15,7 @@ import { Navigate } from "react-router-dom";
 import {useState} from 'react'
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
-import IIITL from 'assets/images/IITL.png' 
+import IIITN from 'assets/images/IITL.png' 
 
 import {useAuthContext} from '../hooks/useAuthContext'; 
 
