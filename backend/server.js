@@ -31,7 +31,7 @@ mongoose.set("strictQuery", false);
 // "mongodb+srv://nimeshSingh:pIpsK3CDwQM0k7hv@cluster0.3fd55sg.mongodb.net/?retryWrites=true&w=majority"
 
  mongoose
-  .connect("mongodb+srv://vishwajeetwalse9767:zJYPyosioLfW9iXJ@cluster0.uhc3u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  .connect("mongodb+srv://vishwajeetwalse9767:Q26AzVdgkZgjk64J@cluster0.gt0pz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     
     console.log('connected to backend');
