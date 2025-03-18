@@ -31,7 +31,7 @@ import {useAuthContext} from "../../hooks/useAuthContext"
 function Dashboard() {
   /* const { sales, tasks } = reportsLineChartData; */
 
-  const [branch,setBranch]=useState('')
+  const [branch,setBranch]=useState('CSE')
 
   const [students,setStudents]=useState()
   const [allTeachers,setAllTeachers]=useState()
@@ -138,7 +138,7 @@ function Dashboard() {
                     noValidate
                     autoComplete="off"
                     >
-                  <TextField id="filled-basic" label="Create Branch" variant="filled" value={branch} onChange={handleBranch} />
+                  <TextField id="filled-basic" label="Create Branch" variant="filled" value="CSE" onChange={handleBranch} />
                   <Stack spacing={2} direction="row">
                 <Button variant="contained" color="success"  onClick={handleClick}> Create</Button>
       

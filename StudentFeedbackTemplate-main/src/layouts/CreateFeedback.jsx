@@ -173,7 +173,7 @@ const CreateFeedback = () => {
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
           className="branch"
-          value={branch}
+          value="CSE"
           onChange={handleBranchChange}
           autoWidth
           label="branch"

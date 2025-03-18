@@ -6,7 +6,7 @@ const BranchWiseFeedbacks=()=> {
    
     
      const [allBranches,setAllBranches]=useState([]);
-     const [curr,setCurrBranch]=useState('');
+     const [curr,setCurrBranch]=useState('CSE');
      const [viewFeedbackToggle,setViewFeedbackToggle]=useState(false);
 
      var baseUrl='https://studentfeedback-backend-mu.vercel.app'
