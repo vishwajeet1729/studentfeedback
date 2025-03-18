@@ -6,7 +6,7 @@ const BranchWiseFeedbacks=()=> {
    
     
      const [allBranches,setAllBranches]=useState([]);
-     const [curr,setCurrBranch]=useState('CSE');
+     const [curr,setCurrBranch]=useState('');
      const [viewFeedbackToggle,setViewFeedbackToggle]=useState(false);
 
      var baseUrl='https://studentfeedback-backend-mu.vercel.app'
@@ -14,6 +14,7 @@ const BranchWiseFeedbacks=()=> {
     useEffect(()=>{
          
       const getBranches=async()=>{
+          /* const branches=await fetch('http://localhost:3005/getAllClasses'); */
           const branches=await fetch(`${baseUrl}/getAllClasses`); 
           const data=await branches.json();
           

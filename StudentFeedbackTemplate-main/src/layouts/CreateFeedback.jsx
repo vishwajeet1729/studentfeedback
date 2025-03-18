@@ -55,12 +55,11 @@ const CreateFeedback = () => {
     const [allBranches,setAllBranches]=useState([])
     
     var baseUrl='https://studentfeedback-backend-mu.vercel.app'
-    var url='https://studentfeedback-backend-mu.vercel.app/getAllClasses'
+    var url='http://localhost:3005/getAllClasses'
     useEffect(()=>{
          
         const getBranches=async()=>{
             const branches=await fetch(`${baseUrl}/getAllClasses`);
-            // const branches=await fetch(url)
             const data=await branches.json();
               setAllBranches(data.classes)
               
@@ -134,7 +133,7 @@ const CreateFeedback = () => {
 
             const subForm=async()=>{
               
-                var url='https://studentfeedback-backend-mu.vercel.app/feedback';
+                var url='http://localhost:3005/feedback';
 
                 const res=await fetch(`${baseUrl}/feedback`,{
                     method:'POST',
@@ -173,7 +172,7 @@ const CreateFeedback = () => {
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
           className="branch"
-          value="CSE"
+          value={branch}
           onChange={handleBranchChange}
           autoWidth
           label="branch"

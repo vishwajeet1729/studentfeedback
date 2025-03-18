@@ -53,16 +53,9 @@ useEffect(()=>{
 
         const sendSubmitFeedback = async () => {
 
-               var url='https://studentfeedback-backend-mu.vercel.app/feedback/submitFeedback'
+               var url='http://localhost:3005/feedback/submitFeedback'
 
-            //  const res = await fetch(`${baseUrl}/feedback/submitFeedback`, {
-            //     method: 'POST',
-            //     body: JSON.stringify(data),
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     }
-            // })
-            const res = await fetch(url, {
+             const res = await fetch(`${baseUrl}/feedback/submitFeedback`, {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {

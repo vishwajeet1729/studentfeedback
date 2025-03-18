@@ -51,23 +51,16 @@ export default function SignUpTeacher() {
     };
 
     var baseUrl='https://studentfeedback-backend-mu.vercel.app'
-    var url='https://studentfeedback-backend-mu.vercel.app/teacher/register'
+    var url='http://localhost:3005/teacher/register'
 
-    // const resp=await fetch(`${baseUrl}/teacher/register`,{
-    //     method:'POST',
-    //     body: JSON.stringify(formData) ,
-    //     headers:{
-    //       'Content-Type': 'application/json'
-    //     }
-    //   })
+    const resp=await fetch(`${baseUrl}/teacher/register`,{
+        method:'POST',
+        body: JSON.stringify(formData) ,
+        headers:{
+          'Content-Type': 'application/json'
+        }
+      })
 
-    const resp=await fetch(url,{
-      method:'POST',
-      body: JSON.stringify(formData) ,
-      headers:{
-        'Content-Type': 'application/json'
-      }
-    })
       if(resp.ok)
       {
           const res= await resp.json();

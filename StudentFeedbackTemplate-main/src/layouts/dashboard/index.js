@@ -10,7 +10,8 @@ import MDBox from "components/MDBox";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-
+// import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
+/* import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart"; */
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
 
 // Data
@@ -31,7 +32,7 @@ import {useAuthContext} from "../../hooks/useAuthContext"
 function Dashboard() {
   /* const { sales, tasks } = reportsLineChartData; */
 
-  const [branch,setBranch]=useState('CSE')
+  const [branch,setBranch]=useState('')
 
   const [students,setStudents]=useState()
   const [allTeachers,setAllTeachers]=useState()
@@ -57,21 +58,14 @@ function Dashboard() {
     }
     
     const sendReq=async()=>{
-              var url='https://studentfeedback-backend-mu.vercel.app//createClass'
-    //   const res=await fetch(`${baseUrl}/createClass`,{
-    //     method:'POST',
-    //     body: JSON.stringify(data),
-    //     headers:{
-    //         'Content-Type': 'application/json'
-    //       }
-    // })
-    const res=await fetch(url,{
-      method:'POST',
-      body: JSON.stringify(data),
-      headers:{
-          'Content-Type': 'application/json'
-        }
-  })
+              var url='http://localhost:3005/createClass'
+      const res=await fetch(`${baseUrl}/createClass`,{
+        method:'POST',
+        body: JSON.stringify(data),
+        headers:{
+            'Content-Type': 'application/json'
+          }
+    })
 
     }
 
@@ -86,13 +80,14 @@ function Dashboard() {
       
       const getData=async()=>{
          
-        var url='https://studentfeedback-backend-mu.vercel.app/dataForDashboard'
-        // const res=await fetch(`${baseUrl}/dataForDashboard`)
-        const res=await fetch(url)
+        var url='http://localhost:3005/dataForDashboard'
+        const res=await fetch(`${baseUrl}/dataForDashboard`)
         const data=await res.json();
+       // console.log(data)
        
         setStudents(data.student_count) 
         setAllTeachers(data.teachers)
+       // console.log(allTeachers)
 
       }
 
@@ -138,7 +133,7 @@ function Dashboard() {
                     noValidate
                     autoComplete="off"
                     >
-                  <TextField id="filled-basic" label="Create Branch" variant="filled" value="CSE" onChange={handleBranch} />
+                  <TextField id="filled-basic" label="Create Branch" variant="filled" value={branch} onChange={handleBranch} />
                   <Stack spacing={2} direction="row">
                 <Button variant="contained" color="success"  onClick={handleClick}> Create</Button>
       

@@ -52,13 +52,12 @@ export default function SignInTeacher() {
      }
 
      var baseUrl='https://studentfeedback-backend-mu.vercel.app'
-     var url='https://studentfeedback-backend-mu.vercel.app/teacher/login'
+     var url='http://localhost:3005/teacher/login'
      var newUrl=`${baseUrl}/teacher/login`
-
      console.log(newUrl);
     //console.log(teacher)
     
-    const resp=await fetch(url,{
+    const resp=await fetch(newUrl,{
       method:'POST',
       body: JSON.stringify(teacher) ,
       headers:{

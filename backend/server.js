@@ -30,7 +30,6 @@ mongoose.set("strictQuery", false);
 //mongodb://localhost:27017/studentFeedbackPortal
 // "mongodb+srv://nimeshSingh:pIpsK3CDwQM0k7hv@cluster0.3fd55sg.mongodb.net/?retryWrites=true&w=majority"
 
-//mongodb+srv://shankar999:Sj9766331670*@cluster0.d7kqi18.mongodb.net/?retryWrites=true&w=majority
  mongoose
   .connect("mongodb+srv://vishwajeetwalse9767:zJYPyosioLfW9iXJ@cluster0.uhc3u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {

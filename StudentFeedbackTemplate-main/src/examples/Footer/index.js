@@ -109,7 +109,7 @@ function Footer({ company, links }) {
             favorite
           </Icon>
         </MDBox>
-        in IIITN.
+        in IIITL.
       </MDBox>
     </MDBox>
   );

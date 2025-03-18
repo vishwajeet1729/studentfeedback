@@ -12,27 +12,18 @@ const ViewAllFeedbacks=({curr})=>{
     const [val,setVal]=useState(-1)
     const {user,dispatchs}=useAuthContext();
     
-    var url=`https://studentfeedback-backend-mu.vercel.app/feedback/allFeedbacks/${curr}`
+    var url=`http://localhost:3005/feedback/allFeedbacks/${curr}`
     var baseUrl='https://studentfeedback-backend-mu.vercel.app'
       useEffect(()=>{
         
-        // const getFeedbacks=async()=>{
-        //     const res=await fetch(`${baseUrl}/feedback/allFeedbacks/${curr}`)
-        //     const data=await res.json()
-          
-        //     setFeedbacks(data.allFeedbacks);
-          
-        //   //console.log(data.allFeedbacks)
-        // }
-
         const getFeedbacks=async()=>{
-          const res=await fetch(url)
-          const data=await res.json()
-        
-          setFeedbacks(data.allFeedbacks);
-        
-        //console.log(data.allFeedbacks)
-      }
+            const res=await fetch(`${baseUrl}/feedback/allFeedbacks/${curr}`)
+            const data=await res.json()
+          
+            setFeedbacks(data.allFeedbacks);
+          
+          //console.log(data.allFeedbacks)
+        }
         getFeedbacks();
        
       

@@ -1,3 +1,19 @@
+/**
+=========================================================
+* Material Dashboard 2 React - v2.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// prop-types is library for typechecking of props
 import PropTypes from "prop-types";
 
 // @mui material components
@@ -29,11 +45,7 @@ function DefaultInfoCard({ color, icon, title, description, value }) {
         </MDBox>
       </MDBox>
       <MDBox pb={2} px={2} textAlign="center" lineHeight={1.25}>
-        <MDTypography
-          variant="h6"
-          fontWeight="medium"
-          textTransform="capitalize"
-        >
+        <MDTypography variant="h6" fontWeight="medium" textTransform="capitalize">
           {title}
         </MDTypography>
         {description && (
@@ -52,22 +64,16 @@ function DefaultInfoCard({ color, icon, title, description, value }) {
   );
 }
 
+// Setting default values for the props of DefaultInfoCard
 DefaultInfoCard.defaultProps = {
   color: "info",
   value: "",
   description: "",
 };
 
+// Typechecking props for the DefaultInfoCard
 DefaultInfoCard.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "info",
-    "success",
-    "warning",
-    "error",
-    "dark",
-  ]),
+  color: PropTypes.oneOf(["primary", "secondary", "info", "success", "warning", "error", "dark"]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,

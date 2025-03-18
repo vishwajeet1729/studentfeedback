@@ -51,23 +51,17 @@ export default function SignUpMUI() {
       password: data.get('password'),
     };
 
-    var url='https://studentfeedback-backend-mu.vercel.app/student/register'
+    var url='http://localhost:3005/student/register'
     var baseUrl='https://studentfeedback-backend-mu.vercel.app'
 
-    // const resp=await fetch(`${baseUrl}/student/register`,{
-    //     method:'POST',
-    //     body: JSON.stringify(formData) ,
-    //     headers:{
-    //       'Content-Type': 'application/json'
-    //     }
-    //   })
-    const resp=await fetch(url,{
-      method:'POST',
-      body: JSON.stringify(formData) ,
-      headers:{
-        'Content-Type': 'application/json'
-      }
-    })
+    const resp=await fetch(`${baseUrl}/student/register`,{
+        method:'POST',
+        body: JSON.stringify(formData) ,
+        headers:{
+          'Content-Type': 'application/json'
+        }
+      })
+
       if(resp.ok)
       {
           const res= await resp.json();
