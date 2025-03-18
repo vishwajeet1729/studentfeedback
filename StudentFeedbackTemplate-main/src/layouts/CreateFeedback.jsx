@@ -44,7 +44,7 @@ var demoQ=[{
 
 const CreateFeedback = () => {
 
-    const [branch, setBranch] = useState('CSE');
+    const [branch, setBranch] = useState('');
     const [flag,setFlag]=useState(false)
    
     const handleBranchChange = (event) => {
@@ -127,7 +127,7 @@ const CreateFeedback = () => {
                 teacher:user.teacher._id,
                 subject:subject,
                 questions:questionList,
-                branch_id:"CSE"
+                branch_id:branch
             }
           console.log(formData)
           //  console.log(cdata);
