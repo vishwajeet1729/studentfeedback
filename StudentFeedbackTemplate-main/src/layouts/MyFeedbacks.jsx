@@ -37,7 +37,6 @@ const MyFeedbacks=({teacherId,flag})=>{
     
       useEffect(()=>{
 
-       // const fet=`http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/myFeedbacks/${user.teacher._id}`
        // console.log(fet)
         const fet=fetchUrl
 

@@ -14,7 +14,6 @@ const BranchWiseFeedbacks=()=> {
     useEffect(()=>{
          
       const getBranches=async()=>{
-          //  const branches=await fetch('http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/getAllClasses'); 
           const branches=await fetch(`${baseUrl}/getAllClasses`); 
           const data=await branches.json();
           
