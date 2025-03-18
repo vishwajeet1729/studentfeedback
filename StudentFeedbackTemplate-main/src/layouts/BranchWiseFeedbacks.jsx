@@ -9,7 +9,7 @@ const BranchWiseFeedbacks=()=> {
      const [curr,setCurrBranch]=useState('');
      const [viewFeedbackToggle,setViewFeedbackToggle]=useState(false);
 
-     var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
+     var baseUrl='https://studentfeedback-backend-mu.vercel.app'
 
     useEffect(()=>{
          

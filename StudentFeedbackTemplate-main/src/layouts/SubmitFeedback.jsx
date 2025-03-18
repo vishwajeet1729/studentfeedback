@@ -49,11 +49,11 @@ useEffect(()=>{
         // console.log(data)
 
 
-         var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
+         var baseUrl='https://studentfeedback-backend-mu.vercel.app'
 
         const sendSubmitFeedback = async () => {
 
-               var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/submitFeedback'
+               var url='https://studentfeedback-backend-mu.vercel.app/feedback/submitFeedback'
 
             //  const res = await fetch(`${baseUrl}/feedback/submitFeedback`, {
             //     method: 'POST',

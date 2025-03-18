@@ -49,10 +49,10 @@ export default function SignIn() {
       password:data.get('password')
      }
 
-     var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/student/login';
-     var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
-    //  var newUrl=`${baseUrl}/student/login`
-    const newUrl=url;
+    //  var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/student/login';
+     var baseUrl='https://studentfeedback-backend-mu.vercel.app'
+     var newUrl=`${baseUrl}/student/login`
+    // const newUrl=url;
      const resp=await fetch(newUrl,{
       method:'POST',
       body: JSON.stringify(student) ,

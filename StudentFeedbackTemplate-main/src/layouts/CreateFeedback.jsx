@@ -54,13 +54,13 @@ const CreateFeedback = () => {
 
     const [allBranches,setAllBranches]=useState([])
     
-    var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
+    var baseUrl='https://studentfeedback-backend-mu.vercel.app'
     var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/getAllClasses'
     useEffect(()=>{
          
         const getBranches=async()=>{
-            // const branches=await fetch(`${baseUrl}/getAllClasses`);
-            const branches=await fetch(url)
+            const branches=await fetch(`${baseUrl}/getAllClasses`);
+            // const branches=await fetch(url)
             const data=await branches.json();
               setAllBranches(data.classes)
               

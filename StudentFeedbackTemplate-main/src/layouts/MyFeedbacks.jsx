@@ -26,7 +26,7 @@ const MyFeedbacks=({teacherId,flag})=>{
      }
 
      var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
-  const fetchUrl=len>0?`http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/myFeedbacks/${teacherId}`:`http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/feedback/myFeedbacks/${user.teacher._id}`
+  const fetchUrl=len>0?`https://studentfeedback-backend-mu.vercel.app/feedback/myFeedbacks/${teacherId}`:`https://studentfeedback-backend-mu.vercel.app/feedback/myFeedbacks/${user.teacher._id}`
      
     // var url1=`https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app/feedback/myFeedbacks/${teacherId}`
     // var url2=`https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app/feedback/myFeedbacks/${user.teacher._id}`

@@ -51,8 +51,8 @@ export default function SignUpMUI() {
       password: data.get('password'),
     };
 
-    var url='http://studentfeedback-5d4s1ghme-vishwajeet1729s-projects.vercel.app/student/register'
-    var baseUrl='https://student-feedback-portal-pyoeyxxmi-shankar9834.vercel.app'
+    var url='https://studentfeedback-backend-mu.vercel.app/student/register'
+    var baseUrl='https://studentfeedback-backend-mu.vercel.app'
 
     // const resp=await fetch(`${baseUrl}/student/register`,{
     //     method:'POST',
