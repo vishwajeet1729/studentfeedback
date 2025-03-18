@@ -251,19 +251,65 @@ catch(err)
  }) 
 
 
- router.get('/active/:feedback_id', async (req, res) => {
-  try {
-    const { feedback_id } = req.params;
+router.get('/active/:feedback_id',async(req,res)=>{
+    
+  try{
+    const {feedback_id}=req.params;
+  
+    const feedback=await Feedback.findById(feedback_id).populate({path:'submission'});
+    feedback.isActive=!feedback.isActive;
+    await feedback.save()
+    //console.log(feedback)
+   
+    //console.log(!feedback.isActive)
+    
+    var datas="";
 
-    const feedback = await Feedback.findById(feedback_id).populate({ path: 'submission' });
-    feedback.isActive = !feedback.isActive;
-    await feedback.save();
+    if(!feedback.isActive)
+    {   
+         for(let sub of feedback.submission)
+         {
+           datas+=sub.text
+           datas+=" ";
+            //console.log(sub.text);
+         }
+        
 
-    res.status(200).json({ feedback });
-  } catch (err) {
-    res.status(500).json({ message: err.message });
+        const sendReq=async(datas)=>
+       {
+        const response = await fetch(
+            "https://api-inference.huggingface.co/models/knkarthick/MEETING_SUMMARY",
+            {
+                headers: { Authorization: `Bearer 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` },
+                method: "POST",
+                body: JSON.stringify(datas),
+            }
+        );
+        const result = await response.json();
+          
+         //console.log(result[0])
+         
+         var summ=result[0].summary_text
+       
+         feedback.summary=summ;
+        // console.log(feedback)
+         await feedback.save();
+
+      }
+         sendReq(datas)
+    
+    }
+
+    
+
+    res.status(200).json({feedback});
   }
-});
+  catch(err){
+    res.status(500).json({ message: err.message });
+    }
+    
+    
 
+})
 
 module.exports=router;
