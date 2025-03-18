@@ -16,14 +16,11 @@ const feedbackRoutes = require("./routes/feedbackRoutes");
 
 const app = express();
 
-const corsOptions = {
-  // origin: "https://gen-z-games.vercel.app",
-  // origin: "https://gen-zgames.vercel.app",
+app.use(cors({
   origin: "https://studentfeedback-rosy.vercel.app",
-  // origin: "http://localhost:3000",
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization"
+}));
 app.use(cors(corsOptions));
 app.use(express.json());
 
